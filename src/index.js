@@ -9,10 +9,7 @@ const main = () => {
 const displayRamens = () => {
   // Use raw URL from GitHub
   fetch(
-    "https://raw.githubusercontent.com/retycdev/phase-1-cc-ramen-rater-v2/main/db.json",
-    {
-      mode: "no-cors",
-    }
+    `https://raw.githubusercontent.com/retycdev/phase-1-cc-ramen-rater-v2/main/db.json`
   )
     .then((response) => {
       // Check if the response is okay
