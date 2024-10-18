@@ -8,7 +8,9 @@ const main = () => {
 
 // Function to fetch and display ramen images
 const displayRamens = () => {
-  fetch("http://localhost:3000/ramens")
+  fetch(
+    "https://github.com/retycdev/phase-1-cc-ramen-rater-v2/blob/main/db.json"
+  )
     .then((response) => response.json())
     .then((data) => {
       const menu = document.getElementById("ramen-menu"); // Get ramen menu div
